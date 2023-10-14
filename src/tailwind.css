@@ -28,8 +28,8 @@
     .sl-title span {
       @apply block uppercase md:text-base text-sm font-bold text-rose-600 font-mono;
     }
-    .sl-title h2 {
-      @apply relative w-fit capitalize md:text-4xl text-2xl md:pb-2 pb-1 font-extrabold tracking-widest cursor-pointer before:absolute before:-bottom-[5%] before:-right-[7.5%] before:bg-rose-600 before:h-1 before:w-3/4 hover:before:w-full before:transition-all before:duration-700;
+    .sl-title {
+      @apply text-base md:text-lg lg:text-xl xl:text-2xl uppercase font-semibold text-[#333333]
     }
   }
   
@@ -47,6 +47,10 @@
         font-family: 'Ubuntu', sans-serif;
     }
 
+    img{
+      max-width: 100%;
+      height: auto;
+    }
     .sl-container {
       width: min(90%, 1440px);
       margin: auto;
