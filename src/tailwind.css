@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sl-animated {
+      @apply ease-in-out duration-500 transition;
+    }
+    .sl-animated-sm {
+      @apply ease-in-out duration-300 transition;
+    }
+    .sl-animated-lg {
+      @apply ease-in-out duration-700 transition;
+    }
+    .sl-animated-xl {
+      @apply ease-in-out duration-1000 transition;
+    }
+    /* .sl-container {
+      @apply max-w-[88rem] w-full px-2 md:px-6 lg:px-8 xl:px-12 mx-auto;'
+    } */
+    /* width: "min(90%,1440px)", margin: "auto" */
+    .sl-banner {
+      @apply bg-cover bg-no-repeat bg-center;
+    }
+    .sl-margin-b {
+      @apply lg:mb-32 md:mb-16 mb-10;
+    }
+    .sl-title span {
+      @apply block uppercase md:text-base text-sm font-bold text-rose-600 font-mono;
+    }
+    .sl-title h2 {
+      @apply relative w-fit capitalize md:text-4xl text-2xl md:pb-2 pb-1 font-extrabold tracking-widest cursor-pointer before:absolute before:-bottom-[5%] before:-right-[7.5%] before:bg-rose-600 before:h-1 before:w-3/4 hover:before:w-full before:transition-all before:duration-700;
+    }
+  }
+  
+  @layer base {
+    a {
+      @apply inline-block;
+    }
+    body {
+      @apply text-black text-sm;
+    }
+  }
+  
+  @layer utilities {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .sl-container {
+      width: min(90%, 1440px);
+      margin: auto;
+    }
+
+  }
